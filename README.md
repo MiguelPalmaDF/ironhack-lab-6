@@ -44,18 +44,18 @@ Individually write a brief report that:
    - Las imágenes Docker pueden ejecutarse en cualquier sistema que soporte Docker, proporcionando flexibilidad en el despliegue.
 
 3. **Escalabilidad**:
-   - Con herramientas de orquestación como Kubernetes, es posible escalar las aplicaciones fácilmente según la demanda, gestionando automáticamente el balanceo de carga y la disponibilidad.
+   - Con herramientas de orquestación como Kubernetes, es posible escalar las aplicaciones fácilmente según la demanda, gestionando automáticamente el balance de carga y la disponibilidad.
 
 ### Desafíos Potenciales
 
 1. **Vulnerabilidades de Seguridad**:
-   - Las imágenes Docker pueden contener vulnerabilidades si no se gestionan adecuadamente. Es crucial escanear regularmente las imágenes y utilizar imágenes base de confianza.
+   - Las imágenes Docker pueden contener vulnerabilidades si no se gestionan adecuadamente. Se recomienda escanear regularmente las imágenes y utilizar imágenes base de confianza.
 
 2. **Complejidad en la Gestión**:
-   - Gestionar un gran número de contenedores y servicios puede ser complejo, requiriendo soluciones robustas de orquestación y monitoreo.
+   - Gestionar un gran número de contenedores y servicios puede llegar a ser complejo, requiriendo soluciones robustas de orquestación y monitoreo.
 
 3. **Dificultades en la Orquestación**:
-   - Configurar y mantener herramientas de orquestación como Kubernetes puede ser desafiante y requiere un alto nivel de experiencia técnica.
+   - Configurar y mantener herramientas de orquestación como Kubernetes puede ser dificil y requiere un buen nivel de experiencia técnica.
 
 ## Soluciones Teóricas o Mejores Prácticas para Superar los Desafíos
 
@@ -64,23 +64,20 @@ Individually write a brief report that:
    - Implementar herramientas de escaneo de seguridad para identificar y mitigar vulnerabilidades en las imágenes Docker.
 
 2. **Uso de Imágenes Base Mínimas**:
-   - Utilizar imágenes base mínimas y evitar ejecutar contenedores con privilegios de root para reducir la superficie de ataque.
+   - Utilizar imágenes base mínimas y evitar ejecutar contenedores con privilegios de root para reducir la probabilidad de ataques.
 
 3. **Actualización Regular**:
-   - Mantener Docker y las herramientas de orquestación siempre actualizadas para beneficiarse de las últimas mejoras de seguridad.
+   - Mantener Docker y las herramientas de orquestación siempre actualizadas de ser posible.
 
 ### Gestión de la Complejidad
 1. **Herramientas de Gestión Local**:
-   - Utilizar herramientas como Docker Compose para gestionar múltiples contenedores en entornos de desarrollo.
+   - Utilizar herramientas como Docker Compose para administrar múltiples contenedores en entornos de desarrollo.
 
 2. **Monitoreo y Registro Integral**:
-   - Implementar soluciones de monitoreo y registro para rastrear el rendimiento de los contenedores y detectar problemas de manera proactiva.
+   - Implementar soluciones de monitoreo y registro para rastrear el rendimiento de los contenedores y detectar problemas.
 
 ### Orquestación Eficaz
 1. **Uso de Kubernetes o Docker Swarm**:
-   - Utilizar Kubernetes o Docker Swarm para la orquestación de contenedores, aprovechando sus capacidades de escalado y gestión automatizada.
-
-2. **Infraestructura como Código (IaC)**:
-   - Adoptar prácticas de Infraestructura como Código para gestionar y desplegar configuraciones de orquestación, asegurando que los entornos sean reproducibles y consistentes.
+   - Utilizar Kubernetes o Docker Swarm para la orquestación de contenedores, aprovechando su capacidad de escalado y gestión automatizado.
 
 ---
